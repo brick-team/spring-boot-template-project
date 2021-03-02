@@ -19,29 +19,29 @@
     <dependency>
       <artifactId>mapper</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>infrastructure-api</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>cache</artifactId>
       <groupId>com.github.huifer</groupId>
       <scope>compile</scope>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>domain-convert</artifactId>
       <groupId>com.github.huifer</groupId>
       <scope>compile</scope>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>project-configuration</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
 
   </dependencies>
@@ -52,7 +52,7 @@
   <parent>
     <artifactId>infrastructure</artifactId>
     <groupId>com.github.huifer</groupId>
-    <version>1.0</version>
+    <version>0.0.1</version>
   </parent>
   <properties>
     <maven.compiler.source>8</maven.compiler.source>

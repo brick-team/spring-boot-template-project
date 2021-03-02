@@ -7,7 +7,7 @@
     <dependency>
       <artifactId>infrastructure-impl</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>xxl-job-core</artifactId>
@@ -20,7 +20,7 @@
   <parent>
     <artifactId>start</artifactId>
     <groupId>com.github.huifer</groupId>
-    <version>1.0</version>
+    <version>0.0.1</version>
   </parent>
   <properties>
     <maven.compiler.source>8</maven.compiler.source>

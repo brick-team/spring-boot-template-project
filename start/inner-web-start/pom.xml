@@ -22,7 +22,7 @@
     <dependency>
       <artifactId>controller-inner</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -45,7 +45,7 @@
   <parent>
     <artifactId>start</artifactId>
     <groupId>com.github.huifer</groupId>
-    <version>1.0</version>
+    <version>0.0.1</version>
   </parent>
 
   <properties>

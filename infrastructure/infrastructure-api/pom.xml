@@ -19,12 +19,12 @@
     <dependency>
       <artifactId>db-entity</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
     <dependency>
       <artifactId>domain-model</artifactId>
       <groupId>com.github.huifer</groupId>
-      <version>1.0</version>
+      <version>0.0.1</version>
     </dependency>
   </dependencies>
 
@@ -35,7 +35,7 @@
   <parent>
     <artifactId>infrastructure</artifactId>
     <groupId>com.github.huifer</groupId>
-    <version>1.0</version>
+    <version>0.0.1</version>
   </parent>
 
   <properties>
