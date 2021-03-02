@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.huifer</groupId>
+  <artifactId>template-project-archetype</artifactId>
+  <version>1.1</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>template-project-archetype</name>
+
+  <build>
+    <extensions>
+      <extension>
+        <artifactId>archetype-packaging</artifactId>
+        <groupId>org.apache.maven.archetype</groupId>
+        <version>3.1.1</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.8.1</version>
+      </plugin>
+
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <id>attach-javadocs</id>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>2.8.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <id>attach-sources</id>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>2.1.2</version>
+      </plugin>
+
+      <plugin>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <configuration>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <serverId>oss</serverId>
+        </configuration>
+        <extensions>true</extensions>
+        <groupId>org.sonatype.plugins</groupId>
+        <version>1.6.7</version>
+      </plugin>
+    </plugins>
+
+  </build>
+
+  <description>Template engineering of huifer.</description>
+
+  <url>https://github.com/huifer/spring-boot-template-project</url>
+
+  <developers>
+    <developer>
+      <name>HuiFer</name>
+      <email>huifer97@163.com</email>
+      <organization>GitHub</organization>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git@github.com:huifer/spring-boot-template-project.git</connection>
+    <developerConnection>scm:git:git@github.com:huifer/spring-boot-template-project.git</developerConnection>
+    <url>scm:git:git@github.com:huifer/spring-boot-template-project.git</url>
+  </scm>
+</project>

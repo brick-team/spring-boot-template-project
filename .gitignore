@@ -268,7 +268,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 ### Maven template
-target/
+base_project/target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
