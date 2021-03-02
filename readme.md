@@ -1,5 +1,20 @@
 # huifer 模板工程
 ## 使用说明
+### mvn 使用说明
+- 执行下面命令可以快速创建一个项目
+```shell
+mvn archetype:generate  \
+    -DgroupId=com.github.huifer.demo.web \
+    -DartifactId=demo-web \
+    -Dversion=1.0.0-SNAPSHOT \
+    -Dpackage=com.github.huifer \
+    -DarchetypeArtifactId=template-project-archetype \
+    -DarchetypeGroupId=com.github.huifer \
+    -DarchetypeVersion=1.1
+```
+
+
+### 源码使用说明
 1. 获取项目
 ```shell
 git clone git@github.com:huifer/spring-boot-template-project.git
