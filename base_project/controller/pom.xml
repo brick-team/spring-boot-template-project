@@ -21,7 +21,7 @@
   <modules>
     <module>controller-common</module>
     <module>controller-inner</module>
-    <module>controller-puglic-network</module>
+    <module>controller-public-network</module>
   </modules>
   <packaging>pom</packaging>
   <parent>

@@ -67,7 +67,7 @@
             </fileSet>
           </fileSets>
         </module>
-        <module id="controller-puglic-network" dir="controller-puglic-network" name="controller-puglic-network">
+        <module id="controller-public-network" dir="controller-public-network" name="controller-public-network">
           <fileSets>
             <fileSet filtered="true" packaged="true" encoding="UTF-8">
               <directory>src/main/java</directory>
@@ -78,7 +78,7 @@
             <fileSet encoding="UTF-8">
               <directory></directory>
               <includes>
-                <include>controller-puglic-network.iml</include>
+                <include>controller-public-network.iml</include>
               </includes>
             </fileSet>
           </fileSets>
