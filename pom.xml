@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>template-project</artifactId>
+  <build>
+    <extensions>
+      <extension>
+        <artifactId>archetype-packaging</artifactId>
+        <groupId>org.apache.maven.archetype</groupId>
+        <version>3.1.1</version>
+      </extension>
+    </extensions>
+  </build>
+  <dependencyManagement>
+    <dependencies>      <!--spring boot bom-->
+      <dependency>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${spring-boot.version}</version>
+      </dependency>      <!--spring cloud bom-->
+      <dependency>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${spring-cloud.version}</version>
+      </dependency>      <!-- DB -->
+      <dependency>
+        <artifactId>druid-spring-boot-starter</artifactId>
+        <groupId>com.alibaba</groupId>
+        <version>${drudi.spring.boot.start.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>mysql-connector-java</artifactId>
+        <groupId>mysql</groupId>
+        <version>${mysql.driver.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <groupId>com.baomidou</groupId>
+        <version>${mybatis-plus-boot-starter.version}</version>
+      </dependency>      <!--            gson -->
+      <dependency>
+        <artifactId>core</artifactId>
+        <groupId>com.google.zxing</groupId>
+        <version>3.3.3</version>
+      </dependency>      <!--            xxl-job-->
+      <dependency>
+        <artifactId>xxl-job-core</artifactId>
+        <groupId>com.xuxueli</groupId>
+        <version>2.2.0</version>
+      </dependency>      <!--test-->
+      <dependency>
+        <artifactId>junit</artifactId>
+        <groupId>junit</groupId>
+        <scope>test</scope>
+        <version>4.13</version>
+      </dependency>
+      <dependency>
+        <artifactId>hibernate-validator</artifactId>
+        <groupId>org.hibernate</groupId>
+        <version>6.1.6.Final</version>
+      </dependency>
+      <dependency>
+        <artifactId>dubbo</artifactId>
+        <groupId>org.apache.dubbo</groupId>
+        <version>${dubbo.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>dubbo-dependencies-zookeeper</artifactId>
+        <groupId>org.apache.dubbo</groupId>
+        <type>pom</type>
+        <version>${dubbo.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <groupId>com.github.huifer</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>controller</module>
+    <module>start</module>
+    <module>open-api</module>
+    <module>database-object</module>
+    <module>domain</module>
+    <module>infrastructure</module>
+    <module>cache</module>
+    <module>project-configuration</module>
+  </modules>
+  <packaging>pom</packaging>
+  <properties>
+    <drudi.spring.boot.start.version>1.1.21</drudi.spring.boot.start.version>
+    <dubbo.version>2.7.9</dubbo.version>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <mybatis-plus-boot-starter.version>3.3.2</mybatis-plus-boot-starter.version>
+    <mysql.driver.version>5.1.46</mysql.driver.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+    <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+  </properties>
+  <repositories>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Sonatype Nexus Staging</name>
+      <releases></releases>
+      <snapshots></snapshots>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </repositories>
+  <version>1.0</version>
+</project>
