@@ -178,6 +178,53 @@
     <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
     <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
   </properties>
+  <profiles>
+    <profile>
+      <activation>
+        <jdk>[1.8,)</jdk>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <!-- Source -->
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>package</phase>
+              </execution>
+            </executions>
+            <groupId>org.apache.maven.plugins</groupId>
+            <version>3.2.0</version>
+          </plugin>
+          <!-- GPG -->
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <phase>verify</phase>
+              </execution>
+            </executions>
+            <groupId>org.apache.maven.plugins</groupId>
+            <version>1.6</version>
+          </plugin>
+        </plugins>
+      </build>
+      <id>release</id>
+      <properties>
+        <gpg.executable>D:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe</gpg.executable>
+      </properties>
+
+    </profile>
+
+  </profiles>
+
   <repositories>
     <repository>
       <id>sonatype-nexus-staging</id>
