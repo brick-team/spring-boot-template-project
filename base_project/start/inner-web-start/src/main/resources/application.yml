@@ -1,0 +1,45 @@
+spring:
+  http:
+    converters:
+      preferred-json-mapper: gson
+  gson:
+    date-format: 'MM-dd-yyyy'
+    disable-html-escaping: ''
+    disable-inner-class-serialization: ''
+    enable-complex-map-key-serialization: ''
+    exclude-fields-without-expose-annotation: ''
+    field-naming-policy: ''
+    generate-non-executable-json: ''
+    lenient: ''
+    long-serialization-policy: ''
+    pretty-printing: ''
+    serialize-nulls: 'true'
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+      username: root
+      password: root
+      min-idle: 2
+      initial-size: 5
+      max-active: 8
+      max-wait: 60000
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    max-active: 4
+    max-wait: -1
+    max-idle: 4
+    min-idle: 0
+    timeout: 20s
+mybatis-plus:
+  #  mapper-locations:
+  #  typeAliasesPackage:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: DELETED
+      logic-delete-value: 1
+      logic-not-delete-value: 0

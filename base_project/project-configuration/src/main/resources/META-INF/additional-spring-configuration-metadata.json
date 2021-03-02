@@ -1,0 +1,13 @@
+{
+	"groups": [{
+		"name": "app",
+		"type": "com.shands.template.configuration.AppVersionConfiguration",
+		"sourceType": "com.shands.template.configuration.AppVersionConfiguration"
+	}],
+	"properties": [{
+		"name": "app.version",
+		"type": "java.lang.String",
+		"description": "当前应用的版本号",
+		"sourceType": "com.shands.template.configuration.AppVersionConfiguration"
+	}]
+}
