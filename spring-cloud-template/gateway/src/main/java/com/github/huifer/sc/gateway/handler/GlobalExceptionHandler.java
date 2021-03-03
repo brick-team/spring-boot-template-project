@@ -1,5 +1,6 @@
 package com.github.huifer.sc.gateway.handler;
 
+import com.github.huifer.sc.http.R;
 import com.google.gson.Gson;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -41,10 +42,7 @@ public class GlobalExceptionHandler implements ErrorWebExceptionHandler {
 
     return response.writeWith(Mono.fromSupplier(() -> {
       DataBufferFactory bufferFactory = response.bufferFactory();
-      Map<String, Object> map = new HashMap<>();
-      map.put("code", 4001);
-      map.put("message", ex.getMessage());
-      byte[] bytes = gson.toJson(map).getBytes(StandardCharsets.UTF_8);
+      byte[] bytes = gson.toJson(R.fail(ex.getMessage())).getBytes(StandardCharsets.UTF_8);
       return bufferFactory.wrap(bytes);
     }));
   }

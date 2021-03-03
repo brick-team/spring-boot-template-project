@@ -15,3 +15,22 @@ server:
 spring:
   application:
     name: gateway
+  profiles:
+    include:
+      - nacos
+  http:
+    converters:
+      preferred-json-mapper: gson
+
+  gson:
+    date-format: ''
+    disable-html-escaping: ''
+    disable-inner-class-serialization: ''
+    enable-complex-map-key-serialization: ''
+    exclude-fields-without-expose-annotation: ''
+    field-naming-policy: ''
+    generate-non-executable-json: ''
+    lenient: ''
+    long-serialization-policy: ''
+    pretty-printing: ''
+    serialize-nulls: 'true'
