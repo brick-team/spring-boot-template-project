@@ -7,7 +7,7 @@
       <groupId>org.springframework.boot</groupId>
     </dependency>
     <dependency>
-      <artifactId>controller-puglic-network</artifactId>
+      <artifactId>controller-public-network</artifactId>
       <groupId>${groupId}</groupId>
       <version>${version}</version>
     </dependency>

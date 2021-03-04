@@ -9,7 +9,7 @@
       <groupId>org.springframework.boot</groupId>
     </dependency>
     <dependency>
-      <artifactId>controller-puglic-network</artifactId>
+      <artifactId>controller-public-network</artifactId>
       <groupId>com.github.huifer</groupId>
       <version>0.0.1</version>
     </dependency>
