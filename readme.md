@@ -13,7 +13,7 @@ mvn archetype:generate  \
     -Dpackage=com.github.huifer \
     -DarchetypeArtifactId=template-project-archetype \
     -DarchetypeGroupId=com.github.huifer \
-    -DarchetypeVersion=1.2
+    -DarchetypeVersion=1.2.1
 ```
 
 
