@@ -19,6 +19,12 @@
     </dependency>
     <dependency>
       <artifactId>controller-inner</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>hibernate-validator</artifactId>
+          <groupId>org.hibernate.validator</groupId>
+        </exclusion>
+      </exclusions>
       <groupId>${groupId}</groupId>
       <version>${version}</version>
     </dependency>
@@ -50,4 +56,14 @@
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>2.0.4.RELEASE</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>

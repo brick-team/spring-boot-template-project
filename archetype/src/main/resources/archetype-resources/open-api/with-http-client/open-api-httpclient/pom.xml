@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <artifactId>${artifactId}</artifactId>
-  <dependencies>
-    <dependency>
-      <artifactId>cache-api</artifactId>
-      <groupId>${groupId}</groupId>
-      <version>${version}</version>
-    </dependency>
-    <dependency>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-      <groupId>org.springframework.boot</groupId>
-    </dependency>
-
-  </dependencies>
-
-  <modelVersion>4.0.0</modelVersion>
-
   <parent>
-    <artifactId>cache</artifactId>
+    <artifactId>with-http-client</artifactId>
     <groupId>${groupId}</groupId>
     <version>${version}</version>
   </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>${artifactId}</artifactId>
+
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>

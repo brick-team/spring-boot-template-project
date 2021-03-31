@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <modules>
     <module>open-api-okhttp</module>
-    <module>open-api-httlclient</module>
+    <module>open-api-httpclient</module>
   </modules>
   <packaging>pom</packaging>
   <parent>
