@@ -10,6 +10,12 @@
     </dependency>
     <dependency>
       <artifactId>controller-public-network</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>hibernate-validator</artifactId>
+          <groupId>org.hibernate.validator</groupId>
+        </exclusion>
+      </exclusions>
       <groupId>com.github.huifer</groupId>
       <version>0.0.1</version>
     </dependency>

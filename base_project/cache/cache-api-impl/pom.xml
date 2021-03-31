@@ -9,6 +9,11 @@
       <groupId>com.github.huifer</groupId>
       <version>0.0.1</version>
     </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+
   </dependencies>
 
   <modelVersion>4.0.0</modelVersion>
