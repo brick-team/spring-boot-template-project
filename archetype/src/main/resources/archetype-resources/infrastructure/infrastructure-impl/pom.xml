@@ -27,12 +27,6 @@
       <version>${version}</version>
     </dependency>
     <dependency>
-      <artifactId>cache</artifactId>
-      <groupId>${groupId}</groupId>
-      <scope>compile</scope>
-      <version>${version}</version>
-    </dependency>
-    <dependency>
       <artifactId>domain-convert</artifactId>
       <groupId>${groupId}</groupId>
       <scope>compile</scope>
