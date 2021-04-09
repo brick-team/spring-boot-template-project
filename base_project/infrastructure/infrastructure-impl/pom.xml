@@ -27,12 +27,6 @@
       <version>0.0.1</version>
     </dependency>
     <dependency>
-      <artifactId>cache</artifactId>
-      <groupId>com.github.huifer</groupId>
-      <scope>compile</scope>
-      <version>0.0.1</version>
-    </dependency>
-    <dependency>
       <artifactId>domain-convert</artifactId>
       <groupId>com.github.huifer</groupId>
       <scope>compile</scope>
